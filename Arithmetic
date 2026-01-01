@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a=45;
+    int b=3;
+    int Sum = a+b;
+    int Diff = a-b;
+    int Prod = a*b;
+    int Div = a/b;
+    int Mod = a%b;
+    printf("Addition=%d\n",Sum);
+    printf("Subtraction=%d\n",Diff);
+    printf("Multiplication=%d\n",Prod);
+     printf("Division=%d\n",Div);
+      printf("Modulus=%d\n",Mod);
+      return 0;
+}
+// OUTPUT
+// Addition=48
+// Subtraction=42
+// Multiplication=135
+// Division=15
+// Modulus=0
+
