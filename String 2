@@ -1,0 +1,22 @@
+//write a c program to count the number of words in a given string
+#include <stdio.h>
+int main() {
+    char str[200];
+    int i, words = 0;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    for (i = 0; str[i] != '\0'; i++) {
+        if ((str[i] == ' ' || str[i] == '\n' || str[i] == '\t') &&
+            (i > 0 && str[i - 1] != ' ' && str[i - 1] != '\n' && str[i - 1] != '\t')) {
+            words++;
+        }
+    }
+    if (i > 0 && str[i - 1] != ' ' && str[i - 1] != '\n' && str[i - 1] != '\t') {
+        words++;
+    }
+    printf("Number of words: %d\n", words);
+    return 0;
+}
+// OUTPUT
+// Enter a string: C programming is one of the best.
+// Number of words: 7
